@@ -170,6 +170,8 @@ describe('Part 1: Sync/Async Callbacker', () => {
           setTimeout(() => {
             done(myRandomNumber);
           }, 50);
+            done(myRandomNumber);
+
         });
         const bSpy = jest.fn(() => {
           // This probably looks weird... We have to wait for this function to be called before testing these functions!
